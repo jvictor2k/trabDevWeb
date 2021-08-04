@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+</head>
+<style>
+    .grid{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 2fr 0.2fr;
+    }
+
+    .image-wrapper{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .image{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    #titulo{
+        position: absolute;
+        font-size: 64px;
+        left: 150px;
+        top: 80px;
+        color: white;
+        font-family: "CaviarDreams";
+    }
+
+    #titulo2{
+        position: absolute;
+        font-size: 64px;
+        left: 300px;
+        top: 80px;
+        color: white;
+        font-family: "CaviarDreams_Bold";
+    }
+
+    .media {
+        background-color: rgb(0, 20, 31);
+        width: 100%;
+        height: 100px;
+        position: relative;
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0fr;
+    }
+
+    @font-face {
+        font-family: "CaviarDreams";
+        src: url("CaviarDreams.ttf") format("truetype");
+    }
+
+    @font-face{
+        font-family: "CaviarDreams_Bold";
+        src: url("CaviarDreams_Bold.ttf") format("truetype");
+    }
+
+    body {
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+</style>
+<body>
+
+    <div class="image-wrapper" >
+        <img class = image src="bannerLiquid.jpg">
+        <label id="titulo">team</label>
+        <label id="titulo2">liquid</label>
+    </div>
+
+<footer class="media">
+    <div>
+        <img src="youtube.png" alt="youtube">
+    </div>
+    <div>
+        <img src="facebook.png" alt="facebook">
+    </div>
+    <div>
+        <img src="instagram.png" alt="instagram">
+    </div>
+    <div>
+        <img src="linkedin.png" alt="linkedin">
+    </div>
+    <div>
+        <img src="reddit.png" alt="reddit">
+    </div>
+    <div>
+        <img src="twitter.png" alt="twitter">
+    </div>
+</footer>
+</body>
+</html>
